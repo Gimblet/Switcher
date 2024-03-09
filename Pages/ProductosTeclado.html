@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../Style/ProductsOverview.css">
+    <title>Switcher - Teclados</title>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <div class="contenedorprincipal">
+        <header>
+            <div class="containermainlogo">
+                <a href="../Pages/index.html">
+                    <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+                </a>
+            </div>
+            <div class="containermainh2">
+                <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+                <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+                <a id="texthe3" href="../Pages/Servicios.html">Servicios</a>
+            </div>
+            <div class="containerheadericons">
+                <div class="headericon1">
+                    <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                        <span id="ccounter"></span>
+                    </div>
+                    <a href="">
+                        <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                            src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon2">
+                    <a href="../Pages/login.html">
+                        <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                            src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon3">
+                    <input id="busqueda" placeholder="Search for something..." type="search">
+                    <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                        onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                        src="../Images/Header Icons/White/icons8-lupa-100.png"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+                </div>
+            </div>
+        </header>
+        <div id="dinamicseparator"></div>
+        <div class="topbanner">
+            <img src="../Images/CatalogoBanners/BANNER TECLADOS.png" alt="">
+        </div>
+        <div class="contenedorProductos">
+            <div class="list">
+                <div class="filterscont">
+                    <div class="txtAlimentacion">
+                        <h2>ALIMENTACIÓN</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>POWERPLAY Compatibility</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>Con Cable</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>Recargable</h3>
+                        </div>
+                        <div class="specs4">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs4">
+                            <h3>Powerplay</h3>
+                        </div>
+                        <div class="specs5">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs5">
+                            <h3>Bateria Alcalina</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtIluminacion">
+                        <h2>ILUMINACIÓN</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>LIGHYSYNC RBG</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtConexion">
+                        <h2>CONEXIÓN</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>Con cable</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>Bluetooth</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>Inalámbrica</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtConexion2">
+                        <h2>CONEXIÓN</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>Óptico</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>Laser</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>Hero</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="colorscontainer">
+                        <h2>COLORES</h2>
+                        <button id="color1"></button>
+                        <button id="color2"></button>
+                        <button id="color3"></button>
+                        <button id="color4"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mouseSpace">
+                <div class="Box1back">
+                </div>
+                <div class="Box1img">
+                    <a href="../Pages/Logitech915TKL.html">
+                        <img id="LogiG915gi" src="../Images/Products/Keyboards/G915TKLow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box1content">
+                    <a id="Box1link" href="../Pages/Logitech915TKL.html">LOGITECH G915 TKL</a>
+                    <a href="" id="Box1tag">LIGHTSYNC</a>
+                </div>
+                <div class="Box2back">
+                </div>
+                <div class="Box2img">
+                    <a href="../Pages/RazerHuntsmanMini.html">
+                        <img src="../Images/Products/Keyboards/HuntsmanMiniow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box2content">
+                    <a id="Box2link" href="../Pages/RazerHuntsmanMini.html">RAZER HUNTSMAN MINI</a>
+                    <a href="" id="Box2tag">ALAMBRICO</a>
+                </div>
+                <div class="Box3back">
+                </div>
+                <div class="Box3img">
+                    <a href="../Pages/LogitechProX.html">
+                        <img id="LogiProXgi" src="../Images/Products/Keyboards/ProXow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box3content">
+                    <a id="Box3link" href="../Pages/LogitechProX.html">LOGITECH PRO X</a>
+                    <a href="" id="Box3tag">INALAMBRICO</a>
+                </div>
+                <div class="Box4back">
+                </div>
+                <div class="Box4img">
+                    <a href="../Pages/VSGAlnilam.html">
+                        <img id="VSGAlgi" src="../Images/Products/Keyboards/AlnilamFull.png" alt="">
+                    </a>
+                </div>
+                <div class="Box4content">
+                    <a id="Box4link" href="../Pages/VSGAlnilam.html">VSG ALNILAM</a>
+                    <a href="" id="Box4tag">ALAMBRICO</a>
+                </div>
+                <div class="Box5back">
+                </div>
+                <div class="Box5img">
+                    <a href="../Pages/KeychronK2.html">
+                        <img id="KeyK2gi" src="../Images/Products/Keyboards/KeychronK2ow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box5content">
+                    <a id="Box5link" href="../Pages/">KEYCHRON K2</a>
+                    <a href="" id="Box5tag">INALAMBRICO</a>
+                </div>
+                <div class="Box6back">
+                </div>
+                <div class="Box6img">
+                    <a href="../pages/RedDragonKumaraK552.html">
+                        <img id="RDKumrgi" src="../Images/Products/Keyboards/KumaraK552ow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box6content">
+                    <a id="Box6link" href="../Pages/RedDragonKumaraK552.html">RED DRAGON KUMARA K552</a>
+                    <a href="" id="Box6tag">ALAMBRICO</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="fottxt1">
+                <a href="">ACERCA DE</a>
+                <br>
+                <a href="">POLITICA DE PRIVACIDAD WEB</a>
+                <br>
+                <a href="">INVERSIONES</a>
+            </div>
+            <div class="fottxt2">
+                <a href="">CONTACTO</a>
+                <br>
+                <a href="">NÚMERO</a>
+                <br>
+                <a href="">CORREO ELECTRONICO</a>
+            </div>
+            <div class="fottxt3">
+                <a href="">SUGERENCIAS</a>
+                <br>
+                <a href="">MI CUENTA</a>
+                <br>
+                <a href="">METODOS DE PAGO</a>
+            </div>
+            <h4 id="footcopyright">© 2023 Switcher. Reservados todos los derechos</h4>
+            <div class="fotgroupimg">
+                <a href="">
+                    <img id="fotfbimg" src="../Images/Footer/Social Media/facebook-white-circle-768x767.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fottwimg" src="../Images/Footer/Social Media/twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fotigimg" src="../Images/Footer/Social Media/instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fotytimg" src="../Images/Footer/Social Media/YT.png" alt="">
+                </a>
+            </div>
+            <div class="fotgroupimgcolor">
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/facebook-color.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/1516920569Instagram-png-logo-version-2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/YT.png" alt="">
+                </a>
+            </div>
+            <img id="imgfooter" src="../Images/Footer/Back/PIE DE PAGINA TECLADOS.png" alt="">
+        </footer>
+    </div>
+    <script src="../JavaScript/main.js"></script>
+</body>
+
+</html>

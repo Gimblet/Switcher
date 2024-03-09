@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../Style/mainstyle.css" />
+    <title>Switcher</title>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <div class="contenedorprincipal">
+        <header>
+            <div class="containermainlogo">
+                <a href="../Pages/index.html">
+                    <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+                </a>
+            </div>
+            <div class="containermainh2">
+                <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+                <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+                <a id="texthe3" href="../Pages/Servicios.html">Servicios</a>
+            </div>
+            <div class="containerheadericons">
+                <div class="headericon1">
+                    <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                        <span id="ccounter"></span>
+                    </div>
+                    <a href="">
+                        <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                            src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon2">
+                    <a href="../Pages/login.html">
+                        <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                            src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon3">
+                    <input id="busqueda" placeholder="Search for something..." type="search">
+                    <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                        onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                        src="../Images/Header Icons/White/icons8-lupa-100.png"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Todo lo que viene a ser el banner -->
+
+        <div id="dinamicseparator"></div>
+        <div class="content">
+            <di class="bannerprincipal">
+                <div class="ContentContainerBanner1">
+                    <a href="../pages/catalogos.html">
+                        <h3 id="DescubreBtnBtL">Descubre</h3>
+                    </a>
+                    <h1 id="MakeYourStyleBtL">Crea tu <br> propio estilo</h1>
+                </div>
+                <div class="ContentContainerBanner1NIP">
+                    <h1 id="MakeYourStyleLtB">Crea tu <br /> propio <span id="estiloanim"></span></h1>
+                    <a href="../pages/catalogos.html">
+                        <h3 id="DescubreBtnLtB">Descubre</h3>
+                    </a>
+                </div>
+                <div class="ContentContainerBanner2">
+                    <h1 id="GamingMouseRtB">MOUSE <br> GAMING</h1>
+                    <h3 id="MouseCharsRtB">Mouse Inalambricos y con cable
+                        <br>
+                        para juegos. Y no deja de innovarlo
+                        <br>
+                        todo, de sensores a formas, para
+                        <br>
+                        darte lo mas adecuado para ti.
+                    </h3>
+                </div>
+                <div class="ContentContainerBanner2NIP">
+                    <h1 id="FILL"></h1>
+                    <h3 id="FILL"><!--? RELLENAR Mouse Inalambricos y con cable <br> para juegos. Y no deja de innovarlo <br>
+                        todo, de sensores a formas, para <br> darte lo mas adecuado para ti.--></h3>
+                </div>
+                <div class="ContentContainerBanner3">
+                </div>
+                <div class="ContentContainerBanner3NIP">
+                </div>
+                <div class="FakeMainBannerCont">
+                    <span></span>
+                </div>
+                <div class="MainBannerCont">
+                    <span id="banner1NIP"></span>
+                </div>
+                <div class="MouseBannerCont">
+                    <span></span>
+                </div>
+                <div class="ThirdBannerCont">
+                    <span></span>
+                </div>
+                <div class="bannerbuttons">
+                    <div class="slide1"></div>
+                    <div class="slide2"></div>
+                    <div class="slide3"></div>
+                </div>
+        </div>
+
+        <!-- Todo lo que viene a ser el contenedor del medio-->
+
+        <div class="contenedorsecundario">
+            <table>
+                <tr>
+                    <td>
+                        <a href="../Pages/LogitechG203.html">
+                            <img id="ad1" src="../Images/Container2/MEJOR CALIDAD.jpg" alt="">
+                        </a>
+                        <h1>LA MEJOR CALIDAD</h1>
+                        <p>Contamos con los mejores <br>perifericos del mercado</p>
+                        <a href="../pages/LogitechG203.html" target="_self">CONOCER LOGITECH G PRO ►</a>
+                    </td>
+                    <td class="separadorMainTd">
+                        <a href="../pages/AsusProArt.html">
+                            <img src="../Images/Container2/DISEÑA TU SET UP.jpeg" alt="">
+                        </a>
+                        <h1>DISEÑA TU SET UP</h1>
+                        <p>Crea tu propio estilo en<br>cualquier ambiente</p>
+                        <a href="../pages/AsusProArt.html" target="_self">CONOCER MONITOR ASUS PROART ►</a>
+                    </td>
+                    <td>
+                        <a href="../pages/LogitechG733.html">
+                            <img src="../Images/Container2/SONIDO QUE IMPACTA.jpg" alt="">
+                        </a>
+                        <H1>SONIDO QUE IMPACTA</H1>
+                        <p>Vive la experiencia gaming con<br>los mejores audifonos</p>
+                        <a href="../pages/LogitechG733.html" target="_self">CONOCER AUDIFONOS LOGITECH G733 ►</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <a href="https://Whatsapp.com">
+        <img id="contactowsp" src="../images/Footer/Fixed/RealWsp.png" alt="">
+    </a>
+
+    <!-- Todo lo que viene a ser el footer -->
+
+    <footer>
+        <div class="fottxt1">
+            <a href="../pages/Servicios.html">ACERCA DE</a>
+            <br>
+            <a
+                href="https://th.bing.com/th/id/R.e48de7cb72d8648b6dd60445b98737a6?rik=3Vy454l0T0t8Cg&riu=http%3a%2f%2frrhconsultores.com.mx%2fwp-content%2fuploads%2f2020%2f05%2fPolitica_Screenshot.png&ehk=j39ANzvEbiTMoxZObA5mjDWn3YQ2PX5u7SyCgWd2xJg%3d&risl=&pid=ImgRaw&r=0">POLITICA
+                DE PRIVACIDAD WEB</a>
+            <br>
+            <a href="https://www.nasdaq.com/market-activity/stocks/logi">INVERSIONES</a>
+        </div>
+        <div class="fottxt2">
+            <a href="../Pages/contacto.html">CONTACTO</a>
+            <br>
+            <a href="https://www.whatsapp.com">NÚMERO</a>
+            <br>
+            <a href="https://www.gmail.com">CORREO ELECTRONICO</a>
+        </div>
+        <div class="fottxt3">
+            <a href="../pages/contacto.html">SUGERENCIAS</a>
+            <br>
+            <a href="../Pages/login.html">MI CUENTA</a>
+            <br>
+            <a
+                href="https://www.seekpng.com/png/detail/272-2720577_visa-mastercard-american-express-logo-png-awesome-graphic.png">METODOS
+                DE PAGO</a>
+        </div>
+        <h4 id="footcopyright">© 2023 Switcher. Reservados todos los derechos</h4>
+        <div class="fotgroupimg">
+            <a href="https://facebook.com">
+                <img id="fotfbimg" src="../Images/Footer/Social Media/White/facebook-white-circle-768x767.png" alt="">
+            </a>
+            <a href="https://twitter.com">
+                <img id="fottwimg" src="../Images/Footer/Social Media/White/twitter.png" alt="">
+            </a>
+            <a href="https://instagram.com">
+                <img id="fotigimg" src="../Images/Footer/Social Media/White/instagram.png" alt="">
+            </a>
+            <a href="https://youtube.com">
+                <img id="fotytimg" src="../Images/Footer/Social Media/White/YT.png" alt="">
+            </a>
+        </div>
+        <div class="fotgroupimgcolor">
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/facebook-color.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/twitter.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/1516920569Instagram-png-logo-version-2.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/YT.png" alt="">
+            </a>
+        </div>
+        <img id="imgfooter" src="../Images/Footer/Pie de pagina.png" alt="">
+    </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JavaScript/main.js"></script>
+</body>
+
+</html>

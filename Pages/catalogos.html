@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switcher</title>
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../Style/catalogostyle.css">
+    <script src="../JavaScript/main.js"></script>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <div class="contenedorprincipal">
+        <header>
+            <div class="containermainlogo">
+                <a href="../Pages/index.html">
+                    <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+                </a>
+            </div>
+            <div class="containermainh2">
+                <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+                <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+                <a id="texthe3" href="../pages/Servicios.html">Servicios</a>
+            </div>
+            <div class="containerheadericons">
+                <div class="headericon1">
+                    <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                        <span id="ccounter"></span>
+                    </div>
+                    <a href="">
+                        <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                            src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon2">
+                    <a href="../Pages/login.html">
+                        <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                            src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon3">
+                    <input id="busqueda" placeholder="Search for something..." type="search">
+                    <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                        onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                        src="../Images/Header Icons/White/icons8-lupa-100.png"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+                </div>
+            </div>
+        </header> <!-- espacio para header -->
+        <div id="dinamicseparator"></div>
+        <div class="DisfrutaExperienciaCont">
+            <h1>DISFRUTA DE LA MEJOR EXPERIENCA</h1>
+            <h2>Da el mejor rendimiento en tus juegos con los mejores perifericos</h2>
+        </div>
+    <main>
+        <aside></aside>
+        <section>
+            <article id="box1"> 
+                <a href="../Pages/ProductosTeclado.html">
+                    <img src="../Images/ContentP2/TECLADO.jpg" alt="">
+                </a>
+            </article>
+            <article id="box2">
+                <a href="../Pages/ProductosAudifonos.html">
+                    <img src="../Images/ContentP2/AUDIFONOS.jpg" alt="">
+                </a>
+            </article>
+            <article id="box3">
+                <a href="../Pages/ProductosMonitores.html">
+                    <img src="../Images/ContentP2/MONITORES.jpeg" alt="">
+                </a>
+            </article>
+            <article id="box4">
+                <a href="../Pages/ProductosMouse.html">
+                    <img src="../Images/ContentP2/MOUSE.jpg" alt="">
+                </a>
+            </article>
+            <a href="../Pages/ProductosTeclado.html" id="h31">TECLADOS</a>
+            <a href="../Pages/ProductosAudifonos.html" id="h32">AUDIFONOS</a>
+            <a href="../Pages/ProductosMonitores.html" id="h33">MONITORES</a>
+            <a href="../Pages/ProductosMouse.html" id="h34">MOUSES</a>
+        </section>
+        <aside></aside>
+    </main>
+        <!-- <footer>
+        <div class="fottxt1">
+            <a href="">ACERCA DE</a>
+            <br>
+            <a href="">POLITICA DE PRIVACIDAD WEB</a>
+            <br>
+            <a href="">INVERSIONES</a>
+        </div>
+        <div class="fottxt2">
+            <a href="">CONTACTO</a>
+            <br>
+            <a href="">NÚMERO</a>
+            <br>
+            <a href="">CORREO ELECTRONICO</a>
+        </div>
+        <div class="fottxt3">
+            <a href="">SUGERENCIAS</a>
+            <br>
+            <a href="">MI CUENTA</a>
+            <br>
+            <a href="">METODOS DE PAGO</a>
+        </div>
+        <h4 id="footcopyright">© 2023 Switcher. Reservados todos los derechos</h4>
+        <div class="fotgroupimg">
+            <a href="">
+                <img id="fotfbimg" src="../Images/Footer/Social Media/facebook-white-circle-768x767.png" alt="">
+            </a>
+            <a href="">
+                <img id="fottwimg" src="../Images/Footer/Social Media/twitter.png" alt="">
+            </a>
+            <a href="">
+                <img id="fotigimg" src="../Images/Footer/Social Media/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img id="fotytimg" src="../Images/Footer/Social Media/YT.png" alt="">
+            </a>
+        </div>
+        <div class="fotgroupimgcolor">
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/facebook-color.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/twitter.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/1516920569Instagram-png-logo-version-2.png" alt="">
+            </a>
+            <a href="">
+                <img src="../Images/Footer/Social Media/Color/YT.png" alt="">
+            </a>
+        </div>
+        <img id="imgfooter" src="../Images/Footer/Back/PIE DE PAGINA MOUSE.png" alt="">
+    </footer> -->
+    </div>
+</body>
+
+</html>

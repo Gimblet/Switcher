@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switcher - Contacto</title>
+    <link rel="stylesheet" href="../Style/contacto.css">
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon">
+    <script src="../JavaScript/main.js"></script>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <div class="contenedorprincipal">
+        <header>
+            <div class="containermainlogo">
+                <a href="../Pages/index.html">
+                    <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+                </a>
+            </div>
+            <div class="containermainh2">
+                <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+                <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+                <a id="texthe3" href="../Pages/Servicios.html">Servicios</a>
+            </div>
+            <div class="containerheadericons">
+                <div class="headericon1">
+                    <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                        <span id="ccounter"></span>
+                    </div>
+                    <a href="">
+                        <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                            src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon2">
+                    <a href="../Pages/login.html">
+                        <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                            src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon3">
+                    <input id="busqueda" placeholder="Search for something..." type="search">
+                    <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                        onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                        src="../Images/Header Icons/White/icons8-lupa-100.png"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+                </div>
+            </div>
+        </header>
+        <div id="dinamicseparator"></div>
+        <div class="contenido">
+            <h2>Buscas asesoramiento para sus compras?</h2>
+            <h3 id="idk">Llama o escribenos a los siguientes números</h3>
+            <h5>935832141</h5>
+            <h5>922001849</h5>
+            <h5>911145123</h5>
+            <h2>Visitanos en persona!</h2>
+            <h3 id="idk">Agenda tu visita en Tienda ↓</h3>
+            <div class="formulario">
+                <form action="">
+                    <div class="texts">
+                        <input id="input1" type="text">
+                        <input id="input2" type="text">
+                        <input placeholder="usuario@gmail.com" id="input3" type="email">
+                        <input type="tel" name="" id="input4">
+                        <input type="date" name="" id="cal">
+                    </div>
+                    <label id="lbl1">Nombres</label>
+                    <label id="lbl2">Apellidos</label>
+                    <label id="lbl3">Email</label>
+                    <label id="lbl4">Telefono</label>
+                    <label id="lbl5">Fecha</label>
+                    <input id="btn1" value="Agendar" type="submit">
+                    <input id="btn2" value="Reiniciar" type="reset">
+                </form>
+            </div>
+            <h3>Nuestra Tienda</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d689.7479321415057!2d-77.03849174912595!3d-12.057035593797494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c6a4cadd41%3A0x684a92056addc88a!2sCyber%20Plaza!5e0!3m2!1sen!2spe!4v1687700112864!5m2!1sen!2spe"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

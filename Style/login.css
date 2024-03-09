@@ -1,0 +1,180 @@
+@font-face {
+	font-family: made-tommy;
+	src: url(../Style/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: made-tommy;
+}
+
+body {
+	background-image: url(../Images/Login/loginback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section {
+	color: white;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+body::after,
+body::after {
+	content: "";
+	position: fixed;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	z-index: -1;
+	filter: blur(150px);
+	opacity: 0.5;
+}
+
+body::before {
+	background: white;
+	left: 0;
+	bottom: 0;
+	transform: translate(-50%);
+}
+
+header {
+	display: flex;
+}
+
+.logo {
+	width: 200px;
+	top: -2px;
+	left: calc(50% - 50px);
+}
+
+a {
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-block;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.gradient-text1 {
+	color: white;
+	font-size: 15px;
+}
+
+.gradient-text {
+	color: #743cff;
+}
+
+.form-main {
+	min-height: 100vh;
+	padding: 60px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-content {
+	width: 100%;
+	max-width: 450px;
+	position: relative;
+	z-index: 1;
+}
+
+.form-content .box {
+	border: 1px solid white;
+	padding: 40px 50px;
+	border-radius: 20px;
+	backdrop-filter: var(green);
+}
+
+.form-content {
+	font-size: 28px;
+	text-align: center;
+	line-height: 1.3;
+	color: white;
+	font-weight: 500;
+}
+
+.form-content form {
+	margin: 25px 0 20px;
+}
+
+.input-box {
+	margin-bottom: 25px;
+}
+
+.form-content ::placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
+.input-control {
+	display: block;
+	height: 45px;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: inherit;
+	font-family: inherit;
+	font-size: 16px;
+	transition: all 0.5s ease-out;
+}
+
+.input-control:focus {
+	outline: none;
+	border-color: #743cff;
+	transition-duration: 0.5s;
+}
+
+.form-content .input-link {
+	margin-top: 10px;
+	text-align: right;
+}
+
+.btn {
+	height: 45px;
+	width: 13.5vw;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-family: inherit;
+	cursor: pointer;
+	border-radius: 25px;
+	user-select: none;
+	background: #743cff;
+	border: none;
+	color: inherit;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn:hover {
+	filter: contrast(0.8);
+}
+
+.btn a {
+	font-size: 0.65vw;
+	color: white;
+}
+
+.createaccount {
+	display: flex;
+	width: 600px;
+	flex-wrap: nowrap;
+	padding: auto;
+	margin: auto;
+}
+
+.form-content p {
+	transform: translateX(50px);
+	font-size: 15px;
+	color: white;
+}

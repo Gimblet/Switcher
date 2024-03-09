@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Switcher</title>
+    <link rel="stylesheet" href="../Style/Servicios.css">
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon">
+    <script src="../JavaScript/main.js"></script>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <header>
+        <div class="containermainlogo">
+            <a href="../Pages/index.html">
+                <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+            </a>
+        </div>
+        <div class="containermainh2">
+            <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+            <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+            <a id="texthe3" href="">Servicios</a>
+        </div>
+        <div class="containerheadericons">
+            <div class="headericon1">
+                <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                    <span id="ccounter"></span>
+                </div>
+                <a href="">
+                    <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                        src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                </a>
+            </div>
+            <div class="headericon2">
+                <a href="../Pages/login.html">
+                    <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                        src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                </a>
+            </div>
+            <div class="headericon3">
+                <input id="busqueda" placeholder="Search for something..." type="search">
+                <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                    onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                    src="../Images/Header Icons/White/icons8-lupa-100.png"
+                    onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+            </div>
+        </div>
+    </header>
+    <div id="dinamicseparator"></div>
+    <div class="containermainstyle">
+        <div class="garantia">
+            <h1>Switcher te protege</h1>
+            <p>Nuestra tienda ofrece garantias hasta de un año <br>
+                Ahora te beneficias mas que nunca, con Switcher, a parte de la garntia de la tienda <br>
+                tienes garantia aumentada directamente con el fabricante.</p>
+            <p id="smallletters">*Garantia con el fabricante sujeta a cambios y disponibilidad. Mas información <a
+                    href="#">aquí</a></p>
+        </div>
+        <div class="delivery">
+            <h1>Delivery</h1>
+            <p>Con el lanzamiento de nuestra pagina web ya no es necesario venir fisicamente a nuestra tienda para hacer
+                tus pedidos.</p>
+            <p>Ahorrate el trafico, ahorra con Switcher.</p>
+        </div>
+        <div class="ensamblado">
+            <h1>Ensamblado</h1>
+            <p>Por la compra de cualquier componente en nuestra tienda tienes derecho a un ensablaje gratuito con
+                nuestros tecnicos.</p>
+        </div>
+        <div class="servicioCliente">
+            <h1>Servicio al Cliente</h1>
+            <p>Nuestro personal siempre está atento a los mensajes de clientes: <br>
+                El horario de atención es de lunes a viernes, desde las 8 am, hasta las 10 pm.</p>
+        </div>
+        <div class="promocionesFlash">
+            <h1>Promociones Flash</h1>
+            <p>Todos los clientes que hayan por lo menos realizadod una compra en nuestra tienda en los ultimos 12 meses
+                <br>
+                tienen derecho a participar en nuestras promociones Flash.<br>
+                Estas promociones tienen lugar todos los jueves tanto presencial como virtualmente en el cual puedes
+                recibir <br>
+                hasta 40% de descuento en productos selecionados.
+            </p>
+            <p id="smallletters">*Promoción sujeta a cambios, limite de productos por persona limitado a 2. Para mas
+                información haga
+                click <a href="#">aquí</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

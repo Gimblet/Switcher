@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/Icon/ICONO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../Style/ProductsOverview.css">
+    <title>Switcher-Monitores</title>
+    <script src="../JavaScript/main.js"></script>
+</head>
+
+<body>
+    <div onclick="changeMode()" class="modeToggle">
+        <img onclick="animateSVG()" id="lightSVG" class="SVG" src="../images/svg/lightmodeicon.svg" alt="">
+    </div>
+    <div class="contenedorprincipal">
+        <header>
+            <div class="containermainlogo">
+                <a href="../Pages/index.html">
+                    <img src="../Images/logo/LOGO ENCABEZADO WHITE.png" alt="" />
+                </a>
+            </div>
+            <div class="containermainh2">
+                <a id="icon1" href="../Pages/catalogos.html">Catalogo</a>
+                <a id="icon2" href="../Pages/contacto.html">Contacto</a>
+                <a id="texthe3" href="">Servicios</a>
+            </div>
+            <div class="containerheadericons">
+                <div class="headericon1">
+                    <div id="bagcounter" class="bagcounter" onload="hideBagCounter()">
+                        <span id="ccounter"></span>
+                    </div>
+                    <a href="">
+                        <img id="icon1" onmouseover="this.src='FilledIcons/icons8-bolsa-de-compras-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-bolsa-de-compras-100.png';"
+                            src="../Images/Header Icons/White/icons8-bolsa-de-compras-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon2">
+                    <a href="../Pages/login.html">
+                        <img id="icon2" class="icon2" onmouseover="this.src='FilledIcons/icons8-persona-100.png';"
+                            onmouseout="this.src='../Images/Header Icons/White/icons8-persona-100.png'"
+                            src="../Images/Header Icons/White/icons8-persona-100.png" alt="" />
+                    </a>
+                </div>
+                <div class="headericon3">
+                    <input id="busqueda" placeholder="Search for something..." type="search">
+                    <img id="icon3" onclick="mostrarBarra()" ondblclick="ocultarBarra()"
+                        onmouseover="this.src='FilledIcons/icons8-lupa-100.png';"
+                        src="../Images/Header Icons/White/icons8-lupa-100.png"
+                        onmouseout="this.src='../Images/Header Icons/White/icons8-lupa-100.png';" alt="" />
+                </div>
+            </div>
+        </header> <!-- espacio para header -->
+        <div id="dinamicseparator"></div>
+        <div class="topbanner">
+            <img src="../images/CatalogoBanners/BANNER MONITORES.png" alt="">
+        </div>
+        <div class="contenedorProductos">
+            <div class="list">
+                <div class="filterscont">
+                    <div class="txtAlimentacion">
+                        <h2>PANEL</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>IPS</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>ULTRA FAST IPS</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>VA</h3>
+                        </div>
+                        <div class="specs4">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs4">
+                            <h3>OLED</h3>
+                        </div>
+                        <div class="specs5">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs5">
+                            <h3>CURVO</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtIluminacion">
+                        <h2>ADICIONALES</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>USB HUB</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtConexion">
+                        <h2>TAMAÑO</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>24''</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>27''</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>32''</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="txtConexion2">
+                        <h2>PUERTOS</h2>
+                        <div class="specs1">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs1">
+                            <h3>USB TIPO C</h3>
+                        </div>
+                        <div class="specs2">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs2">
+                            <h3>HDMI</h3>
+                        </div>
+                        <div class="specs3">
+                            <button id="filters"></button>
+                        </div>
+                        <div class="textspecs3">
+                            <h3>DISPLAYPORT</h3>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="colorscontainer">
+                        <h2>COLORES</h2>
+                        <button id="color2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mouseSpace">
+                <div class="Box1back">
+                </div>
+                <div class="Box1img">
+                    <a href="../Pages/TerosTE27.html">
+                        <img id="displaywidthfix" src="../Images/Products/Monitors/TE31ow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box1content">
+                    <a id="Box1link" href="../Pages/TerosTE27.html">TEROS TE27</a>
+                    <a href="" id="Box1tag">CURVO</a>
+                </div>
+                <div class="Box2back">
+                </div>
+                <div class="Box2img">
+                    <a href="../Pages/GigabyteG27F-2.html">
+                        <img id="displaywidthfix" src="../Images/Products/Monitors/G27F-2ow.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="Box2content">
+                    <a id="Box2link" href="../Pages/GigabyteG27F-2.html">GIGABYTE G27F-2</a>
+                    <a href="" id="Box2tag">USB HUB</a>
+                </div>
+                <div class="Box3back">
+                </div>
+                <div class="Box3img">
+                    <a href="../Pages/AsusProArt.html">
+                        <img id="displaywidthfix" src="../Images/Products/Monitors/ProArtow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box3content">
+                    <a id="Box3link" href="../Pages/AsusProArt.html">ASUS PRO ART</a>
+                    <a href="" id="Box3tag">PROFESIONAL</a>
+                </div>
+                <div class="Box4back">
+                </div>
+                <div class="Box4img">
+                    <a href="../Pages/GigabyteG32QC.html">
+                        <img id="displaywidthfix" src="../Images/Products/Monitors/G32QCow.png" alt="">
+                    </a>
+                </div>
+                <div class="Box4content">
+                    <a id="Box4link" href="../Pages/GigabyteG32QC.html">GIGABYTE G32QC</a>
+                    <a href="" id="Box4tag">CURVO</a>
+                </div>
+                <div class="Box5back">
+                </div>
+                <div class="Box5img">
+                    <a href="../Pages/SamsungOdysseyG5.html">
+                        <img id="displaywidthfix"
+                            src="../Images/Products/Monitors/OdysseyG5ow.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="Box5content">
+                    <a id="Box5link" href="../Pages/SamsungOdysseyG5.html">SAMSUNG ODYSSEY G5</a>
+                    <a href="" id="Box5tag">GAMING</a>
+                </div> 
+            </div>
+        </div>
+        <footer>
+            <div class="fottxt1">
+                <a href="">ACERCA DE</a>
+                <br>
+                <a href="">POLITICA DE PRIVACIDAD WEB</a>
+                <br>
+                <a href="">INVERSIONES</a>
+            </div>
+            <div class="fottxt2">
+                <a href="">CONTACTO</a>
+                <br>
+                <a href="">NÚMERO</a>
+                <br>
+                <a href="">CORREO ELECTRONICO</a>
+            </div>
+            <div class="fottxt3">
+                <a href="">SUGERENCIAS</a>
+                <br>
+                <a href="">MI CUENTA</a>
+                <br>
+                <a href="">METODOS DE PAGO</a>
+            </div>
+            <h4 id="footcopyright">© 2023 Switcher. Reservados todos los derechos</h4>
+            <div class="fotgroupimg">
+                <a href="">
+                    <img id="fotfbimg" src="../Images/Footer/Social Media/facebook-white-circle-768x767.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fottwimg" src="../Images/Footer/Social Media/twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fotigimg" src="../Images/Footer/Social Media/instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img id="fotytimg" src="../Images/Footer/Social Media/YT.png" alt="">
+                </a>
+            </div>
+            <div class="fotgroupimgcolor">
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/facebook-color.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/1516920569Instagram-png-logo-version-2.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../Images/Footer/Social Media/Color/YT.png" alt="">
+                </a>
+            </div>
+            <img id="imgfooter" src="../Images/Footer/Back/PIE DE PAGINA MONITORES.png" alt="">
+        </footer>
+    </div>
+</body>
+
+</html>
